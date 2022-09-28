@@ -2352,7 +2352,6 @@ public class Utilities extends ExtentReporter {
 		// moving to the middle of the suggestion from the Y co-ordinate
 		int middleY = (int) (getY + height * 1.5);
 		TouchAction ta = new TouchAction(getDriver());
-		waitTime(2000);
 		ta.tap(PointOption.point(length / 2, middleY)).perform();
 		logger.info(tourText + " dashboard tour is displayed Tapped at the center of Screen");
 		extent.extentLoggerPass("Tour", tourText + " dashboard tour is displayed Tapped at the center of Screen");
@@ -2363,7 +2362,6 @@ public class Utilities extends ExtentReporter {
 		int guideSuggestion = 1;
 		for (int i = 0; i < guideSuggestion; i++) {
 			tapOnFirstSuggestion(locator);
-			waitTime(2000);
 			if (verifyElementDisplayed(locator)) {
 				guideSuggestion++;
 			} else {

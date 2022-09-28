@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Android" duration-ms="889941" started-at="2022-09-28T15:02:27 IST" finished-at="2022-09-28T15:17:17 IST">
+    <groups>
+    </groups>
+    <test name="GCASH" duration-ms="889941" started-at="2022-09-28T15:02:27 IST" finished-at="2022-09-28T15:17:17 IST">
+      <class name="com.GCash_GGivesScripts.GCASHScripts">
+        <test-method status="PASS" signature="Before()[pri:0, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="Before" is-config="true" duration-ms="21361" started-at="2022-09-28T15:02:37 IST" finished-at="2022-09-28T15:02:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="Allowpopup(java.lang.String)[pri:0, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="Allowpopup" duration-ms="12112" started-at="2022-09-28T15:02:58 IST" finished-at="2022-09-28T15:03:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SenderUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Allowpopup -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="Login" duration-ms="123864" started-at="2022-09-28T15:03:19 IST" finished-at="2022-09-28T15:05:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9999999999]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9664087954]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[000000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[000001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="gGivesHomePage(java.lang.String)[pri:2, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gGivesHomePage" duration-ms="69891" started-at="2022-09-28T15:05:35 IST" finished-at="2022-09-28T15:06:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SenderUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gGivesHomePage -->
+        <test-method status="PASS" signature="gGivesViewPage()[pri:3, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gGivesViewPage" duration-ms="3177" started-at="2022-09-28T15:06:51 IST" finished-at="2022-09-28T15:06:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gGivesViewPage -->
+        <test-method status="PASS" signature="gGivesDashboardPage(java.lang.String)[pri:4, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gGivesDashboardPage" duration-ms="139113" started-at="2022-09-28T15:07:00 IST" finished-at="2022-09-28T15:09:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gGivesDashboardPage -->
+        <test-method status="PASS" signature="gGivesDuesPage()[pri:5, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gGivesDuesPage" duration-ms="859" started-at="2022-09-28T15:09:26 IST" finished-at="2022-09-28T15:09:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gGivesDuesPage -->
+        <test-method status="PASS" signature="gGivesPaymentPage()[pri:6, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gGivesPaymentPage" duration-ms="904" started-at="2022-09-28T15:09:43 IST" finished-at="2022-09-28T15:09:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gGivesPaymentPage -->
+        <test-method status="PASS" signature="gCashLogoutPage()[pri:7, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gCashLogoutPage" duration-ms="5051" started-at="2022-09-28T15:09:53 IST" finished-at="2022-09-28T15:09:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gCashLogoutPage -->
+        <test-method status="PASS" signature="gSaveLoginPage(java.lang.String, java.lang.String)[pri:8, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gSaveLoginPage" duration-ms="87259" started-at="2022-09-28T15:10:25 IST" finished-at="2022-09-28T15:11:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9010000143]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gSaveLoginPage -->
+        <test-method status="PASS" signature="gSaveTransactionPage(java.lang.String)[pri:9, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gSaveTransactionPage" duration-ms="118208" started-at="2022-09-28T15:12:34 IST" finished-at="2022-09-28T15:14:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gSaveTransactionPage -->
+        <test-method status="PASS" signature="gSaveConfirmPage()[pri:10, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="gSaveConfirmPage" duration-ms="49515" started-at="2022-09-28T15:15:23 IST" finished-at="2022-09-28T15:16:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gSaveConfirmPage -->
+        <test-method status="PASS" signature="After()[pri:0, instance:com.GCash_GGivesScripts.GCASHScripts@156875e]" name="After" is-config="true" duration-ms="711" started-at="2022-09-28T15:17:16 IST" finished-at="2022-09-28T15:17:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+      </class> <!-- com.GCash_GGivesScripts.GCASHScripts -->
+    </test> <!-- GCASH -->
+  </suite> <!-- Android -->
+</testng-results>
