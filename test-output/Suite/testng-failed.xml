@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="APIUrl" value="https://api.lab.mynt.xyz/telco-score/trustingsocial/oauth2/token"/>
+  <test thread-count="5" name="GCASH(failed)">
+    <classes>
+      <class name="com.GCash_GGivesScripts.TokenGCASH">
+        <methods>
+          <include name="EmptyClientSecret_TokenGCash" invocation-numbers="0"/>
+          <include name="InvalidClientSecret_TokenGCash" invocation-numbers="0"/>
+          <include name="EmptyGrantType_TokenGCash" invocation-numbers="0"/>
+          <include name="InvalidClientId_TokenGCash" invocation-numbers="0"/>
+          <include name="InvalidGrantType_TokenGCash" invocation-numbers="0"/>
+          <include name="TokenGCash_200" invocation-numbers="0"/>
+          <include name="EmptyClientId_TokenGCash" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.GCash_GGivesScripts.TokenGCASH -->
+    </classes>
+  </test> <!-- GCASH(failed) -->
+</suite> <!-- Failed suite [Suite] -->

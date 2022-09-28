@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="GGivesLoginValidOTP" value="param-val-not-found"/>
+  <parameter name="GSaveValidPhoneNumber" value="param-val-not-found"/>
+  <parameter name="GSaveValidOTP" value="param-val-not-found"/>
+  <parameter name="validphonenumber" value="param-val-not-found"/>
+  <parameter name="userType" value="param-val-not-found"/>
+  <parameter name="amtPay" value="param-val-not-found"/>
+  <parameter name="repaymentAMT" value="param-val-not-found"/>
+  <parameter name="InvalidphoneNumber" value="param-val-not-found"/>
+  <parameter name="GGivesLoginInValidOTP" value="param-val-not-found"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.GCash_GGivesScripts.GCASHScripts">
+        <methods>
+          <include name="Login"/>
+          <include name="gSaveTransactionPage"/>
+          <include name="After"/>
+          <include name="gGivesViewPage"/>
+          <include name="gGivesPaymentPage"/>
+          <include name="Before"/>
+          <include name="gCashLogoutPage"/>
+          <include name="gGivesDuesPage"/>
+          <include name="gGivesHomePage"/>
+          <include name="gSaveLoginPage"/>
+          <include name="Allowpopup"/>
+          <include name="gGivesDashboardPage"/>
+        </methods>
+      </class> <!-- com.GCash_GGivesScripts.GCASHScripts -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

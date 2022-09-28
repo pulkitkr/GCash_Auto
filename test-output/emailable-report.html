@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Android</th></tr>
+<tr><td><a href="#t0">GCASH</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">635,446</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Android</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GCASH &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.GCash_GGivesScripts.GCASHScripts</td><td><a href="#m0">gSaveTransactionPage</a></td><td rowspan="1">1663739243980</td><td rowspan="1">112846</td></tr><tr><th colspan="4">GCASH &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.GCash_GGivesScripts.GCASHScripts</td><td><a href="#m1">Allowpopup</a></td><td rowspan="1">1663738759784</td><td rowspan="1">8814</td></tr><tr class="passedeven"><td><a href="#m2">Login</a></td><td rowspan="1">1663738780017</td><td rowspan="1">93120</td></tr><tr class="passedeven"><td><a href="#m3">gCashLogoutPage</a></td><td rowspan="1">1663739134624</td><td rowspan="1">5237</td></tr><tr class="passedeven"><td><a href="#m4">gGivesDashboardPage</a></td><td rowspan="1">1663738970576</td><td rowspan="1">138005</td></tr><tr class="passedeven"><td><a href="#m5">gGivesDuesPage</a></td><td rowspan="1">1663739116187</td><td rowspan="1">1168</td></tr><tr class="passedeven"><td><a href="#m6">gGivesHomePage</a></td><td rowspan="1">1663738881494</td><td rowspan="1">73799</td></tr><tr class="passedeven"><td><a href="#m7">gGivesPaymentPage</a></td><td rowspan="1">1663739123151</td><td rowspan="1">3205</td></tr><tr class="passedeven"><td><a href="#m8">gGivesViewPage</a></td><td rowspan="1">1663738961155</td><td rowspan="1">3870</td></tr><tr class="passedeven"><td><a href="#m9">gSaveLoginPage</a></td><td rowspan="1">1663739147778</td><td rowspan="1">89797</td></tr></tbody>
+</table>
+<h2>GCASH</h2><h3 id="m0">com.GCash_GGivesScripts.GCASHScripts#gSaveTransactionPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1.00</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text=&apos;My Savings Account&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.utility.Utilities.findElement(Utilities.java:163)
+	at com.utility.Utilities.explicitWaitVisibility(Utilities.java:1472)
+	at com.business.gCASH.GCASHBusinessLogic.GsaveTransaction(GCASHBusinessLogic.java:686)
+	at com.GCash_GGivesScripts.GCASHScripts.gSaveTransactionPage(GCASHScripts.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-077G3EM&apos;, ip: &apos;172.31.99.239&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: gcash.module.splashscreen.m..., appPackage: com.globe.gcash.android.uat..., autoAcceptAlerts: true, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: gcash.module.splashscreen.m..., appPackage: com.globe.gcash.android.uat..., autoAcceptAlerts: true, automationName: uiautomator2, deviceName: Android, fullReset: false, newCommandTimeout: 300, noReset: false, platformName: android}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RZ8M90WEFMD, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RZ8M90WEFMD, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 300, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 83, takesScreenshot: true, viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 32b791a9-27cb-4c7d-87b3-487448ef03f1
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;My Savings Account&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.GCash_GGivesScripts.GCASHScripts#Allowpopup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>SenderUser</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.GCash_GGivesScripts.GCASHScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>9999999999</td><td>9664087954</td><td>000000</td><td>000001</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.GCash_GGivesScripts.GCASHScripts#gCashLogoutPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.GCash_GGivesScripts.GCASHScripts#gGivesDashboardPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>1.00</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.GCash_GGivesScripts.GCASHScripts#gGivesDuesPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.GCash_GGivesScripts.GCASHScripts#gGivesHomePage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>SenderUser</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.GCash_GGivesScripts.GCASHScripts#gGivesPaymentPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.GCash_GGivesScripts.GCASHScripts#gGivesViewPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.GCash_GGivesScripts.GCASHScripts#gSaveLoginPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>9010000143</td><td>000000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android" parallel="false" thread-count="1">
+
+
+	<!-- --><parameter name="userType" value="SenderUser" />  
+	<parameter name="runModule" value="Suite" />
+	<parameter name="runMode" value="Suites" />
+
+	<parameter name="InvalidphoneNumber" value="9999999999" />
+	<parameter name="validphonenumber" value="9664087954" />
+	<parameter name="repaymentAMT" value="1.00" />
+	<parameter name="GSaveValidPhoneNumber" value="9010000143" />
+	<parameter name="GGivesLoginValidOTP" value="000000" />
+	<parameter name="GGivesLoginInValidOTP" value="000001" />
+	<parameter name="GSaveValidOTP" value="000000" />
+	<parameter name="amtPay" value="1.00" />
+	
+	<parameter name="testExecutionKey" value="PP-10" />
+	
+	<listeners>
+		<listener class-name="com.extent.ExtentReporter" />
+	</listeners>
+
+	<test name="GCASH">
+		<classes>
+			<class name="com.GCash_GGivesScripts.GCASHScripts" />
+		</classes>
+	</test>
+</suite>

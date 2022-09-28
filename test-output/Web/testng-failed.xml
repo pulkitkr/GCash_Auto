@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Web]">
+  <parameter name="audioTrackPremiumContent" value="No Entry"/>
+  <parameter name="skipIntroURL" value="https://newpwa.zee5.com/kids/kids-movies/bablu-dablu-robo-rumble/0-0-54219"/>
+  <parameter name="NonsubscribedInvalidPassword" value="igsindia"/>
+  <parameter name="musicDFP" value="Biba - Dil Hi Toh Hai Season"/>
+  <parameter name="subtitleTrackContent" value="Episode 01 - Ganga Enters Widowhood"/>
+  <parameter name="premiumMovieNoTrailer3" value="Raambo 2"/>
+  <parameter name="premiumMovieNoTrailer2" value="Londonalli Lambodara"/>
+  <parameter name="freeMovie" value="Gooli"/>
+  <parameter name="premiumMovie2" value="Bhinna"/>
+  <parameter name="audioTrackURL" value="https://newpwa.zee5.com/tv-shows/agent-raghav-crime-branch/0-6-965/episode-13-agent-raghav/0-1-agentragh_1895058002-agentragh_1804723548-episode_779139720"/>
+  <parameter name="music" value="Nenne Monneya Ninna Parichaya - Giftbox | Ameeta Kulal | Ritvvikk Mathad | Bindu Malini"/>
+  <parameter name="audioTrackTrailerContent" value="Trailer - No Entry"/>
+  <parameter name="SubscribedUserName" value="zeetest10@test.com"/>
+  <parameter name="freeEpisode2" value="Everyone delighted about Adya&#039;s pregnancy - Gattimela"/>
+  <parameter name="freeEpisode1" value="Comedy Kiladigalu Championship - Episode 1 - July 7, 2018 - Full Episode"/>
+  <parameter name="freeEpisode4" value="Aditya shares his feelings - Paaru"/>
+  <parameter name="keyword" value="Jodi Hakki"/>
+  <parameter name="NonsubscribedUserName" value="zeesub@mailnesia.com"/>
+  <parameter name="consumptionsShow" value="Paaru"/>
+  <parameter name="freeEpisode3" value="Jhende admits defeat - Jothe Jotheyali"/>
+  <parameter name="timedAnchorEpisode" value="Paarvathi kisses Aditya - Paaru"/>
+  <parameter name="dfpAdContent" value="Jodi Hakki"/>
+  <parameter name="livetv" value="TV9 Kannada"/>
+  <parameter name="newsToTriggerReco" value="Amid coronavirus, cong holds massive &#039;cycle rally&#039; to protest against fuel price hike in Bengaluru"/>
+  <parameter name="premiumMovie" value="Natasaarvabhowma"/>
+  <parameter name="premiumShow" value="Police Diary 2"/>
+  <parameter name="consumptionsEpisode" value="Digvijay stunned on hearing Sambhashiva"/>
+  <parameter name="premiumMovieWithTrailer2" value="Bhinna"/>
+  <parameter name="NonsubscribedPassword" value="123456"/>
+  <parameter name="runMode" value="Suites"/>
+  <parameter name="freeMovie3" value="Pup Scouts"/>
+  <parameter name="freeMovie2" value="Bablu Dablu - Robo Rumble"/>
+  <parameter name="episodeSpoiler" value="Paaru - April 06, 2020 - Episode Spoiler"/>
+  <parameter name="freeMovie4" value="Robin Hood"/>
+  <parameter name="searchModuleSearchKey" value="Kamali"/>
+  <parameter name="consumptionsPremiumContent" value="Huliraya"/>
+  <parameter name="movieToTriggerReco" value="Monsters And Pirates"/>
+  <parameter name="userType" value="Guest"/>
+  <parameter name="clubShow" value="Jamai 2.0"/>
+  <parameter name="timedAnchorMovie" value="Bablu Dablu - Robo Rumble"/>
+  <parameter name="keyword5" value="Bhinna"/>
+  <parameter name="SubscribedPassword" value="123456"/>
+  <parameter name="keyword6" value="Popcorn Monkey Tiger (A)"/>
+  <parameter name="timedAnchorMusic" value="Kanneeraa - Kavacha | Shivaraj Kumar"/>
+  <parameter name="premiumMovieNoTrailer" value="Mugulu Nage"/>
+  <parameter name="keyword4" value="Paaru gets tipsy"/>
+  <parameter name="keyword1" value="Shivaji Surathkal"/>
+  <parameter name="keyword2" value="Chemistry of Kariyappa"/>
+  <parameter name="ExpiredUserPassword" value="User@123"/>
+  <parameter name="browserType" value="Chrome"/>
+  <parameter name="ExpiredUserName" value="zee5latest@gmail.com"/>
+  <parameter name="premiumMovieWithTrailer" value="Premier Padmini"/>
+  <parameter name="episodeToTriggerReco" value="Aditya-Paarvathi challenge themselves for fun"/>
+  <parameter name="consumptionsFreeContent" value="Robin Hood"/>
+  <parameter name="runModule" value="Suite"/>
+  <parameter name="movieDFP" value="Love U Ganesh"/>
+  <parameter name="consumptionsContentWithMetaData" value="Jothe Jotheyali"/>
+  <parameter name="tvshow" value="Nisha"/>
+  <parameter name="audioTrackContent" value="Episode 13 - Agent Raghav"/>
+  <parameter name="freeContentURL" value="https://newpwa.zee5.com/tvshows/details/paaru/0-6-1179/paaru-gets-tipsy-paaru-highlights/0-1-249189"/>
+  <parameter name="news" value="R News"/>
+  <parameter name="zee5OriginalDFP" value="Once Upon A Time Se Leke"/>
+  <parameter name="url" value="https://pwauat6.zee5.com/"/>
+  <parameter name="trailerOfPremiumMovie" value="Bhinna - Trailer"/>
+  <parameter name="musicToTriggerReco" value="Nenne Monneya Ninna Parichaya - Giftbox | Ameeta Kulal | Ritvvikk Mathad | Bindu Malini"/>
+  <parameter name="subtitleTrackPremiumContent" value="Welcome Back"/>
+  <parameter name="subtitleTrackURL" value="https://newpwa.zee5.com/tv-shows/gangaa/0-6-972/episode-01-ganga-enters-widowhood/0-1-136585"/>
+  <parameter name="skipIntroPremium" value="The Rum Diary"/>
+  <parameter name="episodeDFP" value="Preeta gets evidence against Mahira"/>
+  <listeners>
+    <listener class-name="com.extent.ExtentReporter"/>
+    <listener class-name="com.extent.ParameterInjector"/>
+  </listeners>
+  <test thread-count="1" name="WebPWASanityScript(failed)">
+    <classes>
+      <class name="com.zee5.PWASanityScripts.WebPWASanityScript">
+        <methods>
+          <include name="comboOffer"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.zee5.PWASanityScripts.WebPWASanityScript -->
+    </classes>
+  </test> <!-- WebPWASanityScript(failed) -->
+</suite> <!-- Failed suite [Web] -->

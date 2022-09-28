@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TV" parallel="false" thread-count="1">
+
+	<!-- <parameter name="userType" value="${UserType}"/> Guest/NonSubscribedUser/SubscribedUser 
+		<parameter name="runMode" value="${runMode}"/> <parameter name="runModule" 
+		value="${runModule}"/> <parameter name="browserType" value="${browserType}"/> 
+		<parameter name="url" value="${url}" />-->
+		
+
+	<parameter name="userType" value="Guest" />  <!-- Guest/NonSubscribedUser/SubscribedUser -->
+	<parameter name="runModule" value="Suite" />
+	<parameter name="runMode" value="Suites" />
+	<parameter name="browserType" value="chrome" />
+	<parameter name="url" value="https://newpwa.zee5.com/" />
+	<!-- NONSubscribed User -->
+	<parameter name="NonsubscribedUserName" value="tvautomation@gmail.com"/>
+	<parameter name="NonsubscribedPassword" value="123456"/>
+	<!--  Subscribed User --> 
+	<parameter name="SubscribedUserName" value="autotv@mailnesia.com"/>
+	<parameter name="SubscribedPassword" value="1234567"/>
+	
+	<parameter name="MobileLogin" value="7892215214"/>
+	<parameter name="MobilePassword" value="User@123"/>
+	<parameter name="ClubUserName" value="upiprime@mailnesia.com"/>
+	<parameter name="ClubPassword" value="123456"/>
+	<parameter name="RsvodUserName" value="prtsew12@gmail.com"/>
+	<parameter name="RsvodPassword" value="123456"/>
+
+	<listeners>
+		<listener class-name="com.extent.ExtentReporter" />
+		<!-- <listener class-name="com.extent.ParameterInjector" />-->
+	    <!--  listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/> -->
+		<!-- <listener class-name="com.utility.MyTranformer"/> -->
+	</listeners>
+
+	<test name="TvZee5TvperformanceScripts">
+		<classes>
+			<class name="com.zee5.Zee5TvScripts.TvZee5TvperformanceScripts" /> 
+		</classes>
+	</test>
+</suite>
